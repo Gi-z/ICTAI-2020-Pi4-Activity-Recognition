@@ -1,0 +1,186 @@
+{
+    "csiar": {
+        "directory": "/data-store/CSIAR",
+        "config": {
+            "downsample": 5,
+
+            "structure": "deepconvlstm",
+
+            "batch_size": 128,
+            "epochs": 100,
+
+            "inputWindowLength": 200,
+            "inputValuesLength": 30,
+
+            "outputValuesLength": 7,
+            
+            "outputActivation": "softmax",
+
+            "convolutionalLayers": 2,
+
+            "convolutionalFilters": 64,
+            "convolutionalKernelSize": 5,
+            "convolutionalActivationFunction": "relu",
+            "convolutionalStrides": 1,
+
+            "lstmLayers": 2,
+            "lstmUnits": 200,
+
+            "poolingPoolSize": 4
+        }
+    },
+    "wiar": {
+        "directory": "/data-store/WiAR",
+        "config": {
+            "downsample": 1,
+
+            "structure": "deepconvlstm",
+
+            "batch_size": 128,
+            "epochs": 100,
+
+            "inputWindowLength": 120,
+            "inputValuesLength": 90,
+
+            "outputValuesLength": 16,
+            
+            "outputActivation": "softmax",
+
+            "convolutionalLayers": 4,
+
+            "convolutionalFilters": 64,
+            "convolutionalKernelSize": 5,
+            "convolutionalActivationFunction": "relu",
+            "convolutionalStrides": 1,
+
+            "lstmLayers": 2,
+            "lstmUnits": 200,
+
+            "poolingPoolSize": 40
+        }
+    },
+    "csi46traces": {
+        "directory": "/data-store/CSI traces for 6 activities",
+        "config": {
+            "downsample": 1,
+
+            "structure": "deepconvlstm",
+
+            "batch_size": 128,
+            "epochs": 200,
+
+            "inputWindowLength": 50,
+            "inputValuesLength": 90,
+
+            "outputValuesLength": 6,
+            
+            "outputActivation": "softmax",
+
+            "convolutionalLayers": 2,
+
+            "convolutionalFilters": 64,
+            "convolutionalKernelSize": 5,
+            "convolutionalActivationFunction": "relu",
+            "convolutionalStrides": 1,
+
+            "lstmLayers": 1,
+            "lstmUnits": 200,
+
+            "poolingPoolSize": 4
+        }
+    },
+    "falldefi": {
+        "directory": "/data-store/FallDeFi",
+        "config": {
+            "downsample": 5,
+
+            "structure": "deepconvlstm",
+
+            "batch_size": 128,
+            "epochs": 100,
+
+            "inputWindowLength": 200,
+            "inputValuesLength": 90,
+
+            "outputValuesLength": 12,
+            
+            "outputActivation": "softmax",
+
+            "convolutionalLayers": 2,
+
+            "convolutionalFilters": 64,
+            "convolutionalKernelSize": 5,
+            "convolutionalActivationFunction": "relu",
+            "convolutionalStrides": 1,
+
+            "lstmLayers": 1,
+            "lstmUnits": 200,
+
+            "poolingPoolSize": 4
+        }
+    },
+    "newintel": {
+        "directory": "/data-store/Intel",
+        "config": {
+            "downsample": 1,
+            "structure": "deepconvlstm",
+
+            "batch_size": 128,
+            "epochs": 200,
+
+            "inputWindowLength": 100,
+            "inputValuesLength": 60,
+
+            "outputValuesLength": 11,
+            
+            "outputActivation": "softmax",
+
+            "convolutionalLayers": 1,
+
+            "convolutionalFilters": 64,
+            "convolutionalKernelSize": 5,
+            "convolutionalActivationFunction": "relu",
+            "convolutionalStrides": 1,
+
+            "lstmLayers": 2,
+            "lstmUnits": 200,
+
+            "poolingPoolSize": 4,
+
+            "cross_validation": 10,
+            "result": "Final F1: 0.9444770162818259"
+        }
+    },
+    "newpi": {
+        "directory": "/data-store/Pi",
+        "config": {
+            "downsample": 1,
+            "structure": "deepconvlstm",
+
+            "batch_size": 512,
+            "epochs": 100,
+
+            "inputWindowLength": 100,
+            "inputValuesLength": 256,
+
+            "outputValuesLength": 11,
+            
+            "outputActivation": "softmax",
+
+            "convolutionalLayers": 1,
+
+            "convolutionalFilters": 128,
+            "convolutionalKernelSize": 5,
+            "convolutionalActivationFunction": "relu",
+            "convolutionalStrides": 1,
+
+            "lstmLayers": 1,
+            "lstmUnits": 200,
+
+            "poolingPoolSize": 4,
+
+            "cross_validation": 10,
+            "result": "Final F1: 0.9297632615434737"
+        }
+    }
+}

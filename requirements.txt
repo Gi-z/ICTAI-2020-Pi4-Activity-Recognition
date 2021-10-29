@@ -1,0 +1,5 @@
+tensorflow
+seaborn
+scikit-learn
+scikit-image
+csikit
