@@ -31,13 +31,13 @@ class NewPi(Handler):
             print("Skipping.")
             return None
 
-        csi, _, _ = csitools.get_CSI(csi_data)
+        csi, _, _ = csitools.get_CSI(csi_data, squeeze_output=True)
             
         index = 0
         positiveInput = []
         while index + windowSize <= csi.shape[0]:
             curFeature = np.zeros((1, windowSize, 256))
-            curFeature[0] = csi[index:index+windowSize, :, 0]
+            curFeature[0] = csi[index:index+windowSize, :]
             positiveInput.append(curFeature)
             index += step
 

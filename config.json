@@ -152,12 +152,12 @@
         }
     },
     "newpi": {
-        "directory": "/data-store/Pi",
+        "directory": "./",
         "config": {
             "downsample": 1,
             "structure": "deepconvlstm",
 
-            "batch_size": 512,
+            "batch_size": 256,
             "epochs": 100,
 
             "inputWindowLength": 100,

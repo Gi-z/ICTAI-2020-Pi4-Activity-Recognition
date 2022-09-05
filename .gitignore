@@ -1,0 +1,7 @@
+*.npz
+*.pcap
+*.pyc
+.DS_Store
+
+.devcontainer
+Dockerfile

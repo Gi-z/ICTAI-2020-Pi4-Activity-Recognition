@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # dataset types = csiar|wiar|csi46traces|falldefi
     parser = argparse.ArgumentParser(description="Run experiments given CSI datasets in a variety of formats.")
     parser.add_argument("-c", "--config", type=str, nargs="?", default="config.json", help="Specify a configuration file for experiments. (default: config.json)")
-    parser.add_argument("-d", "--datasets", type=str, nargs="?", default="csiar", help="Specify which datasets to use for experiments. Use unspaced commas for more than one. (options: csiar|wiar|csi46traces|falldefi)")
+    parser.add_argument("-d", "--datasets", type=str, nargs="?", default="newpi", help="Specify which datasets to use for experiments. Use unspaced commas for more than one. (options: csiar|wiar|csi46traces|falldefi)")
     parser.add_argument("-r", "--results", type=str, nargs="?", default="results.json", help="Specify a location to save experimental results. (default: results.json")
 
     parsedArgs = parser.parse_args()

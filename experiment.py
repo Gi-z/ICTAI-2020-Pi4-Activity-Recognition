@@ -23,7 +23,7 @@ from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split, StratifiedKFold
 
 import matplotlib.pyplot as plt
-import seaborn as sns
+# import seaborn as sns
 
 np.random.seed(42)
 
@@ -151,8 +151,8 @@ class Experiment():
         # model.save("checkpoints/model.h5")
 
         print(confusion_matrix(y_valid_single, y_pred_single))
-        print(classification_report(y_valid_single, y_pred_single, target_names=["bed", "fall", "pickup", "run", "sitdown", "standup", "walk"]))
-        # print(classification_report(y_valid_single, y_pred_single, target_names=["nothing", "standup", "sitdown", "getintobed", "cook", "washingdishes", "brushteeth", "drink", "petcat", "sleeping", "walk"]))
+        # print(classification_report(y_valid_single, y_pred_single, target_names=["bed", "fall", "pickup", "run", "sitdown", "standup", "walk"]))
+        print(classification_report(y_valid_single, y_pred_single, target_names=["nothing", "standup", "sitdown", "getintobed", "cook", "washingdishes", "brushteeth", "drink", "petcat", "sleeping", "walk"]))
 
         conf = confusion_matrix(y_valid_single, y_pred_single)
         classification = classification_report(y_valid_single, y_pred_single)

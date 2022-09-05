@@ -1,5 +1,7 @@
-tensorflow
+tensorflow==2.5.0
 seaborn
 scikit-learn
 scikit-image
 csikit
+PyWavelets
+distfit
