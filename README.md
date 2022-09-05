@@ -30,6 +30,7 @@ Epoch 100/100
  [  0   0   0   0   6   0   0   0  60   0   0]
  [  0   0   0   0   0   0   0   0   0 155   0]
  [  0   0   0   0   0   0   0   0   0   0 145]]
+ 
                precision    recall  f1-score   support
 
       nothing       1.00      1.00      1.00       155
